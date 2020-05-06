@@ -3,15 +3,17 @@
 	<head>
 		<title> Bem Vindo(a) Allanda Fotografia! </title>
 	</head>
-	<body link="fuchsia" vlink="red" alink="blue">
+	<body link="fuchsia"  vlink="fuchsiahsia" alink="blue">
 		<p align=center><h1 align=center><font face="MS PGothic" size="7" color="fuchsia"><b> Allanda Fotografias </h1></font></b></p>
 		<hr>
+		<!--Índice, menu para seções da página. OBS: aindta estou decidindo se faço uma página para cada seção ou não-->
 		<p> <b> <font face="MS PGothic" size="5" color="fuchsia"> Índice: 
 		<ol>
 			<li><b><a href="#Quem sou eu">Quem sou eu</a></b>
 			<li><b><a href="#Serviços">Serviços</a></b>
+			<li><b><a href="#Tabela de preços">Tabela de preços</a></b>
 			<li><b><a href="#Contatos">Contatos</a></b>
-		
+			
 		</ol>
 		</b></font></p>
 		<pre>
@@ -56,11 +58,44 @@ vídeoclipes e edição de fotos. </b></p> </font>
 		</font>
 		</pre>
 		<hr>
+		<!--Tabela de preço, preços somente para teste.-->
+			<a name="Tabela de preços">
+			<font face="MS PGothic" size="4">
+			<table width="450" height="30%" align="center" border="3" bordercolor="black" cellspacing="7" cellpadding="4">
+				<tr bgcolor="gray">
+					<td colspan="2" align="center"><b>Tabela de preços*</b></td>
+				<tr bgcolor="fuchsia">
+					<td align="center"><b>Serviços</b></td>
+					<td align="center"><b>Preço</b></td>
+				<tr>
+					<td align="center" bgcolor="fushsia"><b>Ensaio Externo</b></td>
+					<td align="center">a partr de R$xx</td>
+				<tr>
+					<td align="center" bgcolor="fushsia"><b>Festas e Eventos</b></td>
+					<td align="center">a partir de R$xx</td>
+				<tr>
+					<td align="center" bgcolor="fushsia"><b>Teaser</b></td>
+					<td align="center">a partir de R$xx</td>
+			</table>		
+			</font>
+		<hr>
 		<a name="Contatos">
-		<p> <b> <font face="MS PGothic" Size="5" color="fuchsia"> Contatos: 
-		<ul>
-			<li><a href="mailto: andrezaallanda23@gmail.com"> E-mail
-		</b></font></p>
-		</ul>
+		<p align=center><b><font face="MS PGothic" Size="5" color="fuchsia"> Pedido de orçamento e contatos:</b></font></p> 
+		<p><font face="MS PGothic" size="4" color="fuchsia">Se interessou pelos nossos serviços? Preencha os campos abaixo, em 24 horas nossa equipe entrará em contato.</font></p>
+			<form action="andrezaallanda23@gmail.com" method="get">
+				<p><b><font face="MS PGothic" size="4" color="fuchsia">Nome:*
+					<input type=text name="nome" size="25" maxlength="50"><b></font></p>
+				<p><b><font face="MS PGothic" size="4" color="fuchsia">Whatsapp:*
+					<input type=text name="whatsapp" size="25" maxlength="50"></b></font></p>
+				<p><b><font face="MS PGothic" size="4" color="fuchsia">E-mail:*
+					<input type=text name="email" size="25" maxlength="50"></b></font></p>
+				<p><b><font face="MS PGothic" size="4" color="fuchsia">Data do ensaio:
+					<input type=text name="data" size="25" maxlength="50"></b></font></p>
+				<p><b><font face="MS PGothic" size="4" color="fuchsia">Estado:
+					<input type=text value="RJ" name="estado" size="10"></b></font></p>
+				<p><b><font face="MS PGothic" size="4" color="fuchsia">Mensagem:*
+					<textarea name="mensagem" rows="5" cols="33" maxlength="500"></textarea>
+					<input type=submit name="Enviar" size="10">
+			</form>
 </body>
 </html>
