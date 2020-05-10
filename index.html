@@ -3,26 +3,34 @@
 	<head>
 		<title> Bem Vindo(a) Allanda Fotografia! </title>
 	</head>
+	
+	<!---Título do site--->
 	<body link="fuchsia"  vlink="fuchsiahsia" alink="blue">
 		<p align=center><h1 align=center><font face="MS PGothic" size="7" color="fuchsia"><b> Allanda Fotografias </h1></font></b></p>
 		<hr>
-		<!--Índice, menu para seções da página. OBS: aindta estou decidindo se faço uma página para cada seção ou não-->
+		
+		<!--Índice, menu para seções da página. OBS: ainda estou decidindo se faço uma página para cada seção ou não-->
+		<nav>
 		<p> <b> <font face="MS PGothic" size="5" color="fuchsia"> Índice: 
 		<ol>
 			<li><b><a href="#Quem sou eu">Quem sou eu</a></b>
 			<li><b><a href="#Serviços">Serviços</a></b>
 			<li><b><a href="#Tabela de preços">Tabela de preços</a></b>
 			<li><b><a href="#Contatos">Contatos</a></b>
-			
+		</nav>	
 		</ol>
 		</b></font></p>
+		
+		<!--- Seção Quem sou eu, onde é falado um pouco da experiencia profissional--->
 		<pre>
 		<a name="Quem sou eu">
 		<p align=center> <b> <font face="MS PGothic" size="5" color="fuchsia"> 	Sou uma fotógrafa, nascida em Minas e que atualmente mora no Rio de Janeiro-RJ, tenho 4 anos de experiencia <br> 
-fotografando modelos, casamentos, eventos... com ensaios externos e em estúdio. Possuo experiencia também com <br>
+fotografando modelos, casamentos, eventos... com ensaios externos e em estúdio. Possuo experiência também com <br>
 vídeoclipes e edição de fotos. </b></p> </font>
 </pre>
 <hr>
+	
+	<!---Seção de serviços--->
 	<pre>
 	<a name="Serviços">
 		<p align=center> <i><b> <h3 align=center><font face="MS PGothic" Size="5" color="fuchsia"> Meus serviços: </i></b></font></p>
@@ -58,6 +66,7 @@ vídeoclipes e edição de fotos. </b></p> </font>
 		</font>
 		</pre>
 		<hr>
+		
 		<!--Tabela de preço, preços somente para teste.-->
 			<a name="Tabela de preços">
 			<font face="MS PGothic" size="4">
@@ -78,35 +87,43 @@ vídeoclipes e edição de fotos. </b></p> </font>
 					<td align="center">a partir de R$xx</td>
 			</table>		
 			</font>
+		<!---Seção de contatos---->
 		<hr>
 		<a name="Contatos">
-		<p align=center><b><font face="MS PGothic" Size="5" color="fuchsia"> Pedido de orçamento e contatos:</b></font></p> 
+		<p align=center><b><font face="MS PGothic" Size="5" color="fuchsia"> Pedido de orçamento e contatos:</b></font></p>
+		
 		<p><font face="MS PGothic" size="4" color="fuchsia">Se interessou pelos nossos serviços? Preencha os campos abaixo, em 24 horas nossa equipe entrará em contato.</font></p>
+		
 			<form action="andrezaallanda23@gmail.com" method="get">
+				
 				<p><b><font face="MS PGothic" size="4" color="fuchsia">Nome:*
 					<input type=text name="nome" size="25" maxlength="50"><b></font></p>
+				
 				<p><b><font face="MS PGothic" size="4" color="fuchsia">Whatsapp:*
 					<input type=text name="whatsapp" size="25" maxlength="50"></b></font></p>
+				
 				<p><b><font face="MS PGothic" size="4" color="fuchsia">E-mail:*
 					<input type=text name="email" size="25" maxlength="50"></b></font></p>
+				
 				<p><b><font face="MS PGothic" size="4" color="fuchsia">Data do ensaio:
 					<input type=text name="data" size="25" maxlength="50"></b></font></p>
+				
 				<p><b><font face="MS PGothic" size="4" color="fuchsia">Estado:
 					<input type=text value="RJ" name="estado" size="10"></b></font></p>
 					
-					<p><font face="MS PGothic" Size="4" color="fuchsia"><b>Cidade:*</b></font></p>
-						<select name="cidades">
-							<option>Rio de Janeiro
-							<option>Caxias
-							<option>Nilópolis
-							<option>Nova Iguaçu
-							<option>São João de Meriti
-							<option>Mesquita
-							<option>Queimados
-							<option>Niterói
-							<option>São Gonçalo
-							<option>Araruama
-						</select>
+				<p><font face="MS PGothic" Size="4" color="fuchsia"><b>Cidade:*</b></font></p>
+					<select name="cidades">
+						<option>Rio de Janeiro
+						<option>Caxias
+						<option>Nilópolis
+						<option>Nova Iguaçu
+						<option>São João de Meriti
+						<option>Mesquita
+						<option>Queimados
+						<option>Niterói
+						<option>São Gonçalo
+						<option>Araruama
+					</select>
 					
 				<p><b><font face="MS PGothic" size="4" color="fuchsia">Para facilitar o atendimento. Qual o assunto desejado?*<br>
 					<input type=radio name="assunto"> Ensaio externo<br>
@@ -119,5 +136,7 @@ vídeoclipes e edição de fotos. </b></p> </font>
 					<textarea name="mensagem" rows="5" cols="33" maxlength="500"></textarea>
 					<input type=submit name="Enviar" size="10">
 			</form>
-</body>
+			
+	</body>
+	
 </html>
