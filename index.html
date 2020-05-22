@@ -7,27 +7,61 @@
 		<link rel="icon" href="myIcon.png" type="image/x-icon" />
 		<link rel="shortcut icon" href="/myIcon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="C:\Users\Rê_Corcini\Desktop\Fernando\Dev Web\Projeto Allanda Fotografia\AllandaFotografia\Estilo.css" />
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function(){
+
+			jQuery("#subirTopo").hide();
+
+			jQuery('a#subirTopo').click(function () {
+			jQuery('body,html').animate({
+			scrollTop: 0
+			}, 800);
+			return false;
+		});
+
+		jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 1000) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
 	</head>
 	
 	
 	<body>
 	
+	<script language="Javascript">
+	
+	/*Objetivo*/
+	
+	/*Definição de varáveis*/
+	
+	/*Entrada de dados*/
+	
+	/*Saída de dados*/
+	
+	</script>
 	
 	<section id="inicio"></section>
 		
-		<!---Título do site--->
-		
+		<!---Logo--->
 		<img id="logo" src="imagens/logored.png">
+		
+		
 		<!--Menu para seções da página. OBS: ainda estou decidindo se faço uma página para cada seção ou não-->
 		
 		<header>
+		<div>
 		<nav>
 		<b>  
 		<ul class="menu">
-			<li><b><a href="#Quem sou eu" class="classname">Quem sou eu</a></b>
+			<li><b><a href="#Quem-sou-eu" class="classname">Quem sou eu</a></b>
 			<li><b><a href="#Serviços">Serviços</a></b>
-			<li><b><a href="#Tabela de preços">Tabela de preços</a></b>
+			<li><b><a href="#Tabela-preços">Tabela de preços</a></b>
 			<li><b><a href="#Contatos">Contatos</a></b>
 			<li><b><a href="#Redes sociais">Nossas redes sociais</a></b>
 			
@@ -39,54 +73,60 @@
 		
 		
 		
+	
+	</div>
 		
-		<!---Título do site--->
 		
+		<main>
 		
 		<hr>
 		
 		<!--- Seção Quem sou eu, onde é falado um pouco da experiencia profissional--->
+		
 		<article>
-		<section id="Quem sou eu">
-		<p align=center> <strong> 	Sou uma fotógrafa, nascida em Minas e que atualmente mora no Rio de Janeiro-RJ, tenho 4 anos de experiencia <br> 
+		<div>
+		<section id="Quem-sou-eu">
+		<p align=center class="Quem-sou-eu">  	Sou uma fotógrafa, nascida em Minas e que atualmente mora no Rio de Janeiro-RJ, tenho 4 anos de experiencia <br> 
 fotografando modelos, casamentos, eventos... com ensaios externos e em estúdio. Possuo experiência também com <br>
-vídeoclipes e edição de fotos. </strong></p> 
+vídeoclipes e edição de fotos. </p> 
 
 </section>
+</div>
 </article>
 <hr>
 	
 	<!---Seção de serviços--->
 	
-	<a name="Serviços">
-		 <i><strong> <h2 align=center><u> Meus serviços: </u></i></strong></h2>
+	<section id="Serviços">
+		 <strong> <h2 align=center><u> Meus serviços: </u></strong></h2>
 		<ol class="servicelist" type="I" align=left>
 		<img src="C:\Users\Rê_Corcini\Desktop\Fernando\Dev Web\logoaf1.jpg" align=right>
 			<li><strong>Ensaio externo</strong> 
 			<ul class="servicelist" type="disc">
-				<li>MODELOS
-				<li>FAMÍLIA
-				<li>CRIANÇAS E BEBÊS
-				<li>PRE NATAL
-				<li>PRE WEDDING
-				<li> OUTROS
+				<li>Modelos
+				<li>Família
+				<li>Crianças e bebês
+				<li>Pre Natal
+				<li>Pre Wedding
+				<li> Outros
 				
 		</ul>
-			<li><strong>FESTAS E EVENTOS</strong>
+			<li><strong>Festas e Eventos</strong>
 			<ul class="servicelist" type="disc">
-				<li>CASAMENTOS
-				<li>15 ANOS
-				<li>FORMATURA
-				<li>OUTROS
+				<li>Casamentos
+				<li>15 Anos
+				<li>Formatura
+				<li>Outros
 				
 			</ul>
-			<li><strong>VÍDEOS E TEASERS </strong> 
+			<iframe width="450" height="210" align="right" src="https://www.youtube.com/embed/dGLXaujuVEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<li><strong>Vídeos e Teasers </strong> 
 			<ul class="servicelist" type="disc">
-				<li>PESSOAL 
-				<li>EMPRESAS 
-				<li>EVENTOS 
-				<li>BANDAS 
-				<li>OUTROS 
+				<li>Pessoal 
+				<li>Empresas 
+				<li>Eventos 
+				<li>Bandas 
+				<li>Outros 
 		</ul>
 		</ol>
 		
@@ -95,9 +135,9 @@ vídeoclipes e edição de fotos. </strong></p>
 		
 		<!--Tabela de preço, preços somente para teste.-->
 			<article>
-			<section id="Tabela-de-preços">
+			<section id="Tabela-preços">
 			
-			<table align="center" width="450" height="30%"  border="3" bordercolor="black" cellspacing="7" cellpadding="4">
+			<table class="tabelaPreço" align="center" width="450" height="30%"  border="3" bordercolor="black" cellspacing="7" cellpadding="4">
 				<tr bgcolor="gray">
 					<td colspan="2" align="center"><b>Tabela de preços*</b></td>
 				<tr>
@@ -116,10 +156,11 @@ vídeoclipes e edição de fotos. </strong></p>
 			
 			</section>
 			</article>
+		
 		<!---Seção de formulário de contatos---->
 		<hr>
 		<section id="Contatos">
-		<h2 align=center><strong><u> Pedido de orçamento e contatos:</u></strong></h2><br>
+		<h2 align=center class="contato"><strong><u> Pedido de orçamento e contatos:</u></strong></h2><br>
 		
 		<p>Se interessou pelos nossos serviços? Preencha os campos abaixo, em 24 horas nossa equipe entrará em contato.</p><br>
 		
@@ -154,12 +195,12 @@ vídeoclipes e edição de fotos. </strong></p>
 						<option>Araruama
 					</select>
 					
-				<p id="assunto"><strong>Para facilitar o atendimento. Qual o assunto desejado?*<br>
+				<p id="assunto"><strong>Para facilitar o atendimento. Qual o assunto desejado?*</strong><br>
 					<input type=radio name="assunto"> Ensaio externo<br>
 					<input type=radio name="assunto"> Festas e Eventos<br>
 					<input type=radio name="assunto"> Teaser<br>
 					<input type=radio name="assunto"> Outros assuntos<br>
-				</strong></p>
+				</p>
 				
 				<p><strong>Mensagem:*
 					<textarea name="mensagem" rows="5" cols="33" maxlength="500"></textarea>
@@ -168,21 +209,24 @@ vídeoclipes e edição de fotos. </strong></p>
 		</section>
 	
 		<hr>
+		</main>
 		<footer>
 		<section id="Redes sociais">
 			<h2>Nossas redes sociais:</h2>
-			<div>
-			<a href="https://www.instagram.com/allandafotografias/" target="_blank"><img src="C:\Users\Rê_Corcini\Desktop\Fernando\Dev Web\Projeto Allanda Fotografia\AllandaFotografia\Imagens\instagram.png"></a>
+			<div class="redesocial">
+			<a href="https://www.instagram.com/allandafotografias/" target="_blank"><img  src="C:\Users\Rê_Corcini\Desktop\Fernando\Dev Web\Projeto Allanda Fotografia\AllandaFotografia\Imagens\instagram.png"></a>
 			</div>
-			<div>
+			<div class="redesocial">
 			<a href="https://www.facebook.com/Allanda-fotografia-1710303932560098/" target="_blank"><img src="C:\Users\Rê_Corcini\Desktop\Fernando\Dev Web\Projeto Allanda Fotografia\AllandaFotografia\Imagens\facebook.png"></a>
 			</div>
-			<div>
+			<div class="redesocial">
 			<a href="https://wa.me/5521971022610" target="_blank"><img src="C:\Users\Rê_Corcini\Desktop\Fernando\Dev Web\Projeto Allanda Fotografia\AllandaFotografia\Imagens\whatsapp.png"></a>
 			</div>
 		</section>
 		<div>
-		<a href="#inicio">Topo da página</a>
+		<a id="subirTopo">
+			^ <br> subir
+		</a>
 		</div>
 		
 		</footer>
